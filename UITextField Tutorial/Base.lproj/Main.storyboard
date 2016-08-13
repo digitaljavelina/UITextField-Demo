@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UITextField_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVC-ha-sVK">
+                                <rect key="frame" x="252" y="81" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="6gW-QB-LOB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e0-Ir-AD6">
+                                <rect key="frame" x="282" y="159" width="37" height="30"/>
+                                <state key="normal" title="Enter"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fpm-SJ-Yib"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kf-pJ-c6r">
+                                <rect key="frame" x="279" y="231" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JVC-ha-sVK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="7lq-b5-2Zw"/>
+                            <constraint firstItem="JVC-ha-sVK" firstAttribute="centerX" secondItem="0e0-Ir-AD6" secondAttribute="centerX" id="KJF-IL-hzH"/>
+                            <constraint firstItem="9kf-pJ-c6r" firstAttribute="top" secondItem="0e0-Ir-AD6" secondAttribute="bottom" constant="42" id="Rny-tt-YPI"/>
+                            <constraint firstItem="0e0-Ir-AD6" firstAttribute="top" secondItem="JVC-ha-sVK" secondAttribute="bottom" constant="48" id="mpD-fK-RJh"/>
+                            <constraint firstItem="0e0-Ir-AD6" firstAttribute="centerX" secondItem="9kf-pJ-c6r" secondAttribute="centerX" id="oty-Js-v6p"/>
+                            <constraint firstItem="JVC-ha-sVK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tBE-KS-cQC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enteredValue" destination="9kf-pJ-c6r" id="lXk-q5-Qdj"/>
+                        <outlet property="textField" destination="JVC-ha-sVK" id="Tgt-hH-e6i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
